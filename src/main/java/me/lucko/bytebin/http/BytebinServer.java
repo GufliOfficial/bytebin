@@ -120,7 +120,7 @@ public class BytebinServer extends Jooby {
                     .setMethods("POST")
                     .setHeaders("Content-Type", "Accept", "Origin", "Content-Encoding", "Allow-Modification")));
 
-            post("/post", new PostHandler(this, postRateLimiter, rateLimitHandler, contentStorageHandler, contentLoader, contentTokenGenerator, maxContentLength, expiryHandler));
+            post("/", new PostHandler(this, postRateLimiter, rateLimitHandler, contentStorageHandler, contentLoader, contentTokenGenerator, maxContentLength, expiryHandler));
         });
 
         routes(() -> {

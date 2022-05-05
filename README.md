@@ -44,7 +44,7 @@ It's that easy!
   * For gzip, bytebin will automatically uncompress if the client doesn't support compression.
 
 ### Post
-* Send a POST request to `/post` with the content in the request body.
+* Send a POST request to `/` with the content in the request body.
   * You should also specify `Content-Type` and `User-Agent` headers, but this is not required.
 * Ideally, content should be compressed with GZIP or another mechanism before being uploaded.
   * Include the `Content-Encoding: <type>` header if this is the case.
